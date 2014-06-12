@@ -1,0 +1,58 @@
+<title>Contact | SoftHub</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link href="https://dl.dropboxusercontent.com/u/92877479/favicon.png" rel="icon">
+<center><a href="index.html"><img src="https://dl.dropboxusercontent.com/u/92877479/logo.png" width="700" height="200"></a></center>
+<div id="nav_bar">
+<div id="nav" align="center"><a href="index.html">Home</a></div>
+<div id="nav" align="center"><a href="software.html">Software(s)</a></div>
+<div id="nav" align="center"><a href="search.html">Search</a></div>
+<div id="nav" align="center"><a href="contact.html">Contact Us</a></div>
+<div id="nav" align="center"><a href="about.html">About Us</a></div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div id="content">
+Fill th given form in order to contact the Admin.
+<form action="contact.html" method="POST">
+<p><input type="text" name="name" placeholder="Full name" size="45" value="" id="name" /></p>
+<p><input type="email" name="email" placeholder="Email" size="45" value="" id="email"/></p>
+<p><select name="select">
+<option selected value="Select">Select</option>
+<option value="False download link">False download link</option>
+<option value="Found a bug">Found a bug</option>
+<option value="Suggestion">Suggestion</option>
+<option value="Advertisement">Advertisement</option>
+<option value="Bussiness related">Bussiness related</option>
+<option value="Other">Other</option>
+</select></p>
+<textarea name="message" placeholder="Type your message in no more than 500 words." rows="7" cols="35" id="msg"></textarea>
+<p><input type="button" name="submit" value="Send" onClick="fm()" /></p>
+</form>
+</div>
+<p>&nbsp;</p>
+<div id="alert_txt">
+<script>
+function fm()
+{
+	var a = document.getElementById("name").value;
+	var ad = document.getElementById("name").defaultvalue;
+	var b = document.getElementById("email").value;
+	var bd = document.getElementById("email").defaultvalue;
+	var c = document.getElementsByName("select").value;
+	var cd = "Select";
+	var d = document.getElementById("msg").value;
+	if(!a==ad || !b==bd || !c==cd || d)
+	{
+		alert("Website under construction, try to contact later.");
+	}
+	else
+	{
+		alert("Please Provide the details.");
+	}
+}
+</script>
+</div>
+<p>&nbsp;</p>
+<div id="cr" align="center">
+<span id="cr_txt">All Rights Reserved © | SoftHub - </span> <span id="cr_lh"><a href="about.html"> About Us</a></span> <span id="cr_lh"><a href="contact.html"> Contact</a></span>
+</div>
